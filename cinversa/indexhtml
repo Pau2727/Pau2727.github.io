@@ -1,6 +1,7 @@
 <!-- Aquest codi és un HTML i es diu index.html perquè tots els navegadors busquen index.html per obrir.lo-->
 <!DOCTYPE html>
-
+<!-- En aquest codi canviaré cdirecta a cinversa. He de canviar el text d'entrada i ara les variables no seran q1 i q2 sinò que seran x,y.
+I mantinc a1 i a2, i obtindré com a resultat q1 i q2. -->
 <html lang="ca">
 <!-- La llengua emprada es català, si fos castellà seria "es" i angles "en"-->
   <head>
@@ -29,7 +30,8 @@
       margin: 20px;
     }
 
-    .equation {
+    .equation { //*Equation amb un punt davant significa que és una classe o class que pot repetirse diverses en el codi.
+Si jo faig una classe la puc repetir, si faig identificador seria un * no es pot repetir. Tot el que tingui classe tinrà un màxim de 20 pixels al voltant.*/
       margin: 20px 0;
     }
 
@@ -48,7 +50,7 @@
   </style>
 </head>
 <body>
-  <h1>Càlcul de la posició d'un robot amb dos braços</h1>
+  <h1>Càlcul dels angles d'un robot amb dos braços</h1>
   <div>
     <label for="a1">Longitud del primer braç (a₁):</label>
     <input type="number" id="a1" value="1" step="0.1"><br><br>
@@ -56,24 +58,26 @@
     <label for="a2">Longitud del segon braç (a₂):</label>
     <input type="number" id="a2" value="0.5" step="0.1"><br><br>
 
-    <label for="q1">Angle del primer braç (q₁, en graus):</label>
-    <input type="number" id="q1" value="45" step="0.1"><br><br>
+    <label for="x">Posició final x (en metres):</label>
+    <input type="number" id="x" value="2.2" step="0.1"><br><br>
 
-    <label for="q2">Angle del segon braç (q₂, en graus):</label>
-    <input type="number" id="q2" value="30" step="0.1"><br><br>
+    <label for="y">Posició final y ( en metres):</label>
+    <input type="number" id="y" value="1.8" step="0.1"><br><br>
 
-    <button onclick="calculatePosition()">Calcula la posició</button>
+    <button onclick="calculateAngles()">Calcula els angles</button>
   </div>
   <div id="output"></div>
   <canvas id="robotCanvas" width="400" height="400"></canvas>
 
 <script>
-function calculatePosition() {
+function calculateAngles() {
   // Agafar les dades introduïdes per l'usuari
   let a1 = parseFloat(document.getElementById('a1').value);
+//let significa variable, antigament es deia var(variable) a1 és el nombre de variable triat. ParseFloat és una funció que es converteix el que ha posat l'usuari en un floating point number, o número decimal getElementById
+i l'element que té l'identificador a1 i el guardarà com a la variable a1.
   let a2 = parseFloat(document.getElementById('a2').value);
-  let q1_deg = parseFloat(document.getElementById('q1').value); // Grados
-  let q2_deg = parseFloat(document.getElementById('q2').value); // Grados
+  let q1_deg = parseFloat(document.getElementById('x').value); // metres
+  let q2_deg = parseFloat(document.getElementById('y').value); // metres
   let q1 = q1_deg * Math.PI / 180; // Convertir graus a radians
   let q2 = q2_deg * Math.PI / 180; // Convertir graus a radians
 
