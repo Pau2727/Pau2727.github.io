@@ -24,11 +24,22 @@ I mantinc a1 i a2, i obtindré com a resultat q1 i q2. -->
     <!--Script és una etiqueta molt important perquè ens indica que el que hi ha després és javascript. La línia anterior carrega matnjax que ens permet que surtin
     fòrmules matemàtiques boniques-->
   </script>
-  <style>
+  <style> /* Aquesta part del codi és CSS, que serveix per donar estil als elements html. El codi CSS té sempre la meteixa estructura. Comença amb una etiqueta html que volem modificar i donar estil, 
+es posa una ''carly tracket'' que engloba una o diverses línies amb la seguent estructura:
+propietat1: valor1 ; propietat2: valor2, etc. I s'acaba amb una clau tancada.
+Per exemple, la linia 35 modificarà el body que es troba més endavant en la linia 77. Quines són les propietats?
+font family es la familia del tipus de lletra o font. Hi ha tres families de lletres: sans serif que significa sense serifs.
     body {
       font-family: Arial, sans-serif;
+
       margin: 20px;
+/* Margin és el marge exterior. CSS té un model de caixa o box en el que el contigut o content està envoltat pel padding i aquest
+està envoltat pel border està envoltat pel margin. Margin, border i padding són propietats CSS que puc aplica a diferents etiquetes
+o tags html. Després de la propietat en pixels, a vegades hi ha dos valors en pixels i a vegades tres valors. Hi ha un valor s'aplica 
+el primer adalt i abaix i el segon la dreta i a l'esquerra. Si hi ha tres valors: el primer valor s'aplica adalt , el segon a la dreta
+el tercer a la esquerra....
     }
+
 
     .equation { //*Equation amb un punt davant significa que és una classe o class que pot repetirse diverses en el codi.
 Si jo faig una classe la puc repetir, si faig identificador seria un * no es pot repetir. Tot el que tingui classe tinrà un màxim de 20 pixels al voltant.*/
