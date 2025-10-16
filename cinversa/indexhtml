@@ -70,10 +70,10 @@ Si jo faig una classe la puc repetir, si faig identificador seria un * no es pot
     <input type="number" id="a2" value="0.5" step="0.1"><br><br>
 
     <label for="x">Posició final x (en metres):</label>
-    <input type="number" id="x" value="2.2" step="0.1"><br><br>
+    <input type="number" id="x" value="1.2" step="0.1"><br><br>
 
     <label for="y">Posició final y ( en metres):</label>
-    <input type="number" id="y" value="1.8" step="0.1"><br><br>
+    <input type="number" id="y" value="1.5" step="0.1"><br><br>
 
     <button onclick="calculateAngles()">Calcula els angles</button>
   </div>
@@ -87,14 +87,20 @@ function calculateAngles() {
 //let significa variable, antigament es deia var(variable) a1 és el nombre de variable triat. ParseFloat és una funció que es converteix el que ha posat l'usuari en un floating point number, o número decimal getElementById
 i l'element que té l'identificador a1 i el guardarà com a la variable a1.
   let a2 = parseFloat(document.getElementById('a2').value);
-  let q1_deg = parseFloat(document.getElementById('x').value); // metres
-  let q2_deg = parseFloat(document.getElementById('y').value); // metres
-  let q1 = q1_deg * Math.PI / 180; // Convertir graus a radians
-  let q2 = q2_deg * Math.PI / 180; // Convertir graus a radians
+ // let q1_deg = parseFloat(document.getElementById('x').value); // metres
+ // let q2_deg = parseFloat(document.getElementById(Cy').value); // metres
+ // let q1 = q1_deg * Math.PI / 180; // Convertir graus a radians
+ // let q2 = q2_deg * Math.PI / 180; // Convertir graus a radians
+
+ // let q1_deg = parseFloat(document.getElementById('x').value); // metres
+
+let x=parseFloat(document.getElementId('x').value; // Metres
+let y=parseFloat(document.getElementId('y').value; // Metres
 
   // **Mostrar els contenidors de sortida**
   document.getElementById('output').style.display = 'block';
   document.getElementById('robotCanvas').style.display = 'block';
+// Aquest contenidors només sortiran si l'usuari clica  a un botó que està a la línia
 
   // Fase 1: Fórmules
   let output = "<div class='equation'>Les equacions per calcular la posició final del robot són:</div>";
