@@ -41,7 +41,15 @@
             El primary és el color principal de la web, en aquest són tons foscos per capçeleres i fons.
             El secondary és un color secundari i s'aplica en enllaços i coses que li vols donar importància.
             El accent dona encara més importància, per alertes o botons importants.
-            Light és un color clar */
+            Light és un color clar 
+            Light es un color clar que es faservir per el fons o textos suaus.
+            En aquest cas root significa l'elemnt significa el document arrel del html
+            Muted es un color apagat  per textos secundaris.
+            Succes es un color verd que indica exir o que s'a fet be
+            Card-bg es el fons d'una targeta o contenidor
+            Glass esun efecte de vidre translucid perque 0,6 es el canal alpha o transparencia que va despres de rgb,que signifca el color
+            Radius es el arrodniment de les cantonades lg=arodoniment grand(large) sm= arodoniment petit(small)
+            Shadow es una ombra suau per donar profunditata un black o contenedor */
             --primary: #2c3e50;
             --secondary: #3498db;
             --accent: #e74c3c;
@@ -58,13 +66,19 @@
 
         /* ===== BASIC LAYOUT ===== */
         *{box-sizing:border-box}
-        /* L'asterisc 
+        /* L'asterisc és el seletor universal, per exemple si jo vull buscar un document i poso un asterisc al buscador, per exemple *-js- buscara
+        tots els documents que conntenen js(javascript), en aquest cas, posar un asterisc afecta a totes les etiquetes html.
+        La propietat box-sizing controla com es calcula l'amplada i l'alçada d'un element, concretament si el padin i el borden s'inclouen dins de les mides o no. Enn el cas
+        border-box que és el valor de la propietat box-sixing, l'amplada i l'alçada de tots els elements inclouen el border i el padding, en canvi en comptes de border-box poses
+        content-box l'amplada total seria més gran i hauries de sumar el padding i el border. És més fàcil per a un dissenyador fer border-box perquè té en compte totes les mides*/
         html,body{
             height:100%;
             margin:0;
             padding:0;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        /*És l'ordre de prioritzar cada tipus de lletra.*/
             background: linear-gradient(135deg,#f5f7fa 0%, #d8e1ef 100%);
+            /*Linear-gradient  fa una transició de color de fons(degradat suau perquè hi ha poca diferència entre les lletres al abecedari.
             color:#222;
         }
 
