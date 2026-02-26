@@ -22,6 +22,16 @@
       necessito donar polsos molt ràpidament en milisegons de cinc volts. Aquests polsos són d'ona quadrada, és a dir, que canvien de zero a 5 volts de forma immediata. Els canvis son tan ràpids que l'ull
       humà no el veurà . Si fos un motor servo d'un braç robòtic la inèrcia del motor faria que no s'aturi.</p>
       <p> Si dono 5 volts la meita del temps pujant i baixant de cero a 5 volts continuament en una ona quadrada serà com si dones 2,5 volts i el motor anirà a la meitat de velocitat.</p>
+      <p>En la següent imatge podem veure com funciona internament PWM. </p>
+      <img src="PWM.png">
+      <p> A la imatge de més amunt podem veure amb 0 volts es mantindra constant el pols i a 5 volts es mantindra constant.</p>
+      <p> Podem veure que el 50% de PWM vol dir que esta feent 0-1-0-1-0-1... de forma que l'amplada del 0 volts és a dir, quan és 0 i és igual a l'amplada del 1 que és 5 volts.
+      Això és un voltatge de 2,5V</p>
+      <p> Podem veure que el 25% de PWM vol dir que esta feent 0-0-0-1-0-0-0-1... de forma que l'amplada del 0 volts és a dir, quan és 0 i és igual a tres vegades a l'amplada de l  que és 5 volts.
+      Això és un voltatge de 1,25V(5/4)</p>
+       <p> Podem veure que el 75% de PWM vol dir que esta feent 0-1-1-1-0-1-1-1... de forma que l'amplada del 0 volts és a dir, quan és 0 i és igual a la quarta part  a l'amplada de l  que és 5 volts.
+      Això és un voltatge de 3,75V(0,75*5)</p>
+      
      <iframe width="725" height="453" src="https://www.tinkercad.com/embed/6IKniPvL2JS?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
        <pre><code class="language-arduino">
          
