@@ -28,17 +28,23 @@
       <p> Podem veure que el 50% de PWM vol dir que esta feent 0-1-0-1-0-1... de forma que l'amplada del 0 volts és a dir, quan és 0 i és igual a l'amplada del 1 que és 5 volts.
       Això és un voltatge de 2,5V.
       Com un arduino UNO té PWM que funciona com una sortida analògica de 8 bits és a dir, 2<sup>8</sup> combinacions, de 0-255, significa que un voltatge
-      de 2,5V volts donaria 127. L' instrució d'arduino serà analogwrite(127) </p>
+      de 2,5V volts donaria 127. L' instrució d'arduino serà analogwrite(127).
+      Si es tracta d'un arduino nano ESP32 té la sortida analògica de 12 bits és a dir, 2<sup>12</sup> combinacions, de 0-4095, amb un voltatge de 3,3 voltes.
+      Per tant l'instrució seria diferent: analogWrite(2047)</p>
       <p> Podem veure que el 25% de PWM vol dir que esta feent 0-0-0-1-0-0-0-1... de forma que l'amplada del 0 volts és a dir, quan és 0 i és igual a tres vegades a l'amplada de l  que és 5 volts.
       Això és un voltatge de 1,25V(5/4)
       Com un arduino UNO té PWM que funciona com una sortida analògica de 8 bits és a dir, 2<sup>8</sup> combinacions, de 0-255, significa que un voltatge
-      de 1,25V volts donaria 64. L' instrució d'arduino serà analogwrite(64)</p>
+      de 1,25V volts donaria 64. L' instrució d'arduino serà analogwrite(64).
+      Si es tracta d'un arduino nano ESP32 té la sortida analògica de 12 bits és a dir, 2<sup>12</sup> combinacions, de 0-4095, amb un voltatge de 3,3 voltes.
+      Per tant l'instrució seria diferent: analogWrite(1023)</p>
        <p> Podem veure que el 75% de PWM vol dir que esta feent 0-1-1-1-0-1-1-1... de forma que l'amplada del 0 volts és a dir, quan és 0 i és igual a la quarta part  a l'amplada de l  que és 5 volts.
       Això és un voltatge de 3,75V(0,75*5).
-        Com un arduino UNO té PWM que funciona com una sortida analògica de 8 bits és a dir, 2<sup>8</sup> combinacions, de 0-255, significa que un voltatge
-      de 3,75V volts donaria 191. L' instrució d'arduino serà analogwrite(191)</p>
+      Com un arduino UNO té PWM que funciona com una sortida analògica de 8 bits és a dir, 2<sup>8</sup> combinacions, de 0-255, significa que un voltatge
+      de 3,75V volts donaria 191. L' instrució d'arduino serà analogwrite(191).
+      Si es tracta d'un arduino nano ESP32 té la sortida analògica de 12 bits és a dir, 2<sup>12</sup> combinacions, de 0-4095, amb un voltatge de 3,3 voltes.
+      Per tant l'instrució seria diferent: analogWrite(3070)</p>
       
-      <p></p>
+      <p>Arduino nano dona més varietat de intensitat anàlogica, per tant, més precisió i colors.</p>
       
      <iframe width="725" height="453" src="https://www.tinkercad.com/embed/6IKniPvL2JS?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
        <pre><code class="language-arduino">
