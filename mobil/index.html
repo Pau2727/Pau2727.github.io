@@ -24,28 +24,20 @@
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
   <body>
-   $$ f=\frac{v}{\lambda }$$
-\\
+$$ f=\frac{v}{\lambda }$$
 $$f= \text{freqüència (cicles/s)}$$
-\\
 $$v= \text{velocitat de la ona (m/s)}$$
-\\
 $$\lambda= \text{longitud d'ona (m)}$$
-\\
 $$\text{La fórmula anterior s'aplica a qualsevol ona. Per exemple, el so, les ones del mar i les ones electromagnètiques. Si són ones electromagnètiques la velocitat és c, que és la velocitat de la llum.}
 <p>La longitud d'ona és el periòde, llavors si la multipliquem pel número d'ones obtindrem la distància, i si 
 tenim la distància i el temps podem trobar la velocitat. Si tenim ones electromagnètiques la velocitat és c= 3·10^8 m/s. Així podem trobar el diàmetre de l'anell d'Hertz.
 La deducció que la velocitat és de la llum la va fer Maxwell a les seves equacions de forma teòrica als anys 1860s i al 1887, Hertz va fer experiments per demostrar les equacions
 teòriques de Maxwell existien a la realitat.</p>  
 \text{Si volem detectar un mòbil que emeti a 1800 MHz, quin diàmetre és necesari per contruir un anell de Hertz?. Serà la meitat de la longitud d'ona. Subtituïm valors per tal de calcular el diàmetre aïllant la longitud d'ona.}
-\\
-D=2\lambda 
-\\
-D= diàmetre
-\\
-\lambda = \text{longitud d'ona}
-\\
-\lambda=\frac{c}{f}=\frac{3·10^{8}\text{m/s}}{1800·10^{6}\text{cicles/s}}= 0,1666 \text{m}= 16,666 \text{cm}
+$$D=2\lambda 
+$$D= diàmetre
+$$\lambda = \text{longitud d'ona}
+$$\lambda=\frac{c}{f}=\frac{3·10^{8}\text{m/s}}{1800·10^{6}\text{cicles/s}}= 0,1666 \text{m}= 16,666 \text{cm}
 <p> L'anell de Hertz tindrà meitat de la longitud d'ona, en aquest cas, la longitud d'ona de 8,33 cm.</p>
 <h1> Com construir l'anell de Hertz? </h1>
 <p>Agafem un cable d'electrònica rigid (AWG 22 (el més comú)): té un diàmetre de 0,64 mm i el pelem i un cop pelat el deixem un espai de 5mm obert.
@@ -58,6 +50,16 @@ f=\text{freqüència (Hz)}
 L=\text{inductància (H)}
 \\
 C=\text{capacitat (F)}
+
+<p>La fórmula anterior es coneix com a fórmula de freqüència de resonància i és perquè ens diu la relació que hi ha entre la freqüència que volem detectar,
+per exemple, 1800 MHz amb dos paràmetres d'elements electrònics del circuit. Realment al temps de Hertz no existien condensadors i bobines 
+i utilizaven l'ampolla de Leiden com a condensador. Actualment tenim condensadors i bobines electrònics que formen part tant pels mòbils per produïr la freqüència 
+de resonància que prodrueixen una ona portadora i aquesta ona a sobre porta unes altres ones que son les de audio i video. L'anell de Hertz 
+funciona igualk només . </p>
+    <p> La fórmula d'un condensador és:</p>
+
+
+    <p></p>
     <h1> Elements electrònic per detectar un mòbil</h1>
     <ol>
       <li>MICROCONTROLADOR (CERVELL): Necesitem un component que processi i decideixi que fer: encendre un LED, mesurar la intensitat
