@@ -1,8 +1,6 @@
 <html>
 <head>
-  <title> DETECTOR MÒBIL</title>
-   <!-- MathJax per renderitzar fórmules LaTeX -->
-    <script>
+  <title> DETECTOR MÒBIL</title>  <script>
         window.MathJax = {
             tex: {
                 inlineMath: [['$', '$'], ['\\(', '\\)']],
@@ -22,52 +20,74 @@
         };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+$$f=\frac{v}{\lambda}$$
+\\
+$$f=\text{freqüència (cicles/s)}$$
+\\
+$$v=\text{velocitat de la ona (m/s)}$$
+\\
+$$\lambda=\text{longitud d'ona(m)}$$
+\\
+$$\text{ La fórmula anterior s'aplica a qualsevol ona. Per exemple, el so, les ones del mar, i les ones electromagnètiques. si són ones elecromagnètiques la velocitat és c, que és la velocitat de la llum.}$$
+<p>La longitud d'una ona és el periode, llavors si la multipliquem pel numero d'ones obtindrem la distància, i si tenim la distància i el temps podem trobar la velocitat
+Si tenim ones electromagnetiques la velocitat és c=3·10^8 m/s. Així podem trobar el diàmetre de l'Anell d'Hertz. La deducció que la velocitat és va fer Maxwell a les seves equacions de forma teorica als anys 1860's i al 1887 Hertz
+va fer experiments per demostrar les equacions teoriques de Maxwell existien a la realitat. </p>
+\\
+$$\text{Si volem detectar un mòbil que emeti a 1800 MHz, quin diàmnetre és necessari per construir un anell de Hertz. Serà la meitat de la longitud d'ona. Sustituïm valors per tal de calcular el diametre aïllant la longitud d'ona.}$$
+
+$$D=2\lambda$$
+\\
+$$D=\text{diàmetre de l'anell de hertz}$$
+\\
+$$\lambda=longitud d'ona$$
+
+$$\lambda=\frac{c}{f}=\frac{3·10^{8}\text{m/s}}{1800·10^{6}\text{cicles/s}}=0,16667 \text{m}=16,6667\text{cm}$$
+
+$$f=\frac{1}{2\pi\sqrt{L·C}}$$
+  <p>La fórmula anterior es coneix com a fórmula de freqüència de resonància i és important perquè ens diu la relació
+  que hi ha entre la freqúència que volem detectar què és la del mòbil com per expemple 1800MHz amb dos paràmetres d'elemnts
+  electrònics del circuit. Realment en els temps de Hertz no eistien condensadors i bobines i utilitzaven per exemple l'ampolla de Leiden
+  com a condensador i bobina. Actualment tenim condensadors i bobines electrònics que formen part tant dels mòbils per produir la freqüència de resonància
+  que produeixen una ona portadora i aquesta ona a sobre porta unes altres ones que son les de audio i video. L'anell de Hertz funciona igual només detecta
+  una freqúència de resonància perquè l'anell té un camp elèctric i magnètic que depèn del material de l'anell que és coure i el diàmetre i l'espai que hi ha buit de l'anell.</p>
+<p>La capacitat de un condensador es mesura en Farads que és la unitat del S.I. i que indica la quantitat de càrregues elèctriques emmagatemades entre dos plaques.
+La unitat de Farad és enorme i s'utilitzen unitats submúltiples </p>
+ <p>La fórmula d'un condensador és:</p>
+  $$C(capacitat)=\frac{Q(càrrega}{V(voltatge}$$
+  <p>La càrrega elèctrica d'un condensador té com a unitat el Coulomb i la capacitat d'emmagatzema 1 Coulomb en una diferència de potencial d'1 volt és 1 Farad. </p>
+  <p>La fórmula d'una bobina és:</p>
+  $$L=\frac{N^2S\mu}{l}$$
+  $$\text L= valor de la inductància (H) vol dir Henrys$$
+  $$\text N=Número de voltes o espires de la bobina(adimensional)$$
+  $$\text \mu= Permeabilitat del nucli (Wb/Am)Wb vol dir Weber(unitat de flux magnètic) dividit Ampere per metre$$
+  $$\text S=Secció del nucli$$
+  $$\text l=Longitud deles $$
+  <h1>Què fa una bobina al nostre context?</h1>
+  <p>En el nostre cas la bobina genera un camp magnètic que és molt important ja que en un futur generará un camp elèctric que detetarem. Sempre
+  que hi ha un camp magnètic hi ha un camp elèctric associat i al inrevès</p>
+ 
+ 
+  <h1> Com construim l'Anell de Hertz?</h1>
+<p> Agafem un cable d'electrònica rígid  (AWG 22 (el més comú): Té un diàmetre de 0,64 mm) i el pelem i un cop pelat el deixem en un espai de 5 mm obert. Es coporta com un condensador i una bobina perquè pot circular una corrent elèctrica molt dèbil que provè del camp magnètic del mòbil que genera un camp elèctric. 
+  És a dir, el mòbil genera un camp magnètic que indueix el corrent que fa moure electrons en el coure que composa l'Aro de Hertz.
+
 </head>
-  <body>
-$$ f=\frac{v}{\lambda }$$
-$$f= \text{freqüència (cicles/s)}$$
-$$v= \text{velocitat de la ona (m/s)}$$
-$$\lambda= \text{longitud d'ona (m)}$$
-$$\text{La fórmula anterior s'aplica a qualsevol ona. Per exemple, el so, les ones del mar i les ones electromagnètiques. Si són ones electromagnètiques la velocitat és c, que és la velocitat de la llum.}
-<p>La longitud d'ona és el periòde, llavors si la multipliquem pel número d'ones obtindrem la distància, i si 
-tenim la distància i el temps podem trobar la velocitat. Si tenim ones electromagnètiques la velocitat és c= 3·10^8 m/s. Així podem trobar el diàmetre de l'anell d'Hertz.
-La deducció que la velocitat és de la llum la va fer Maxwell a les seves equacions de forma teòrica als anys 1860s i al 1887, Hertz va fer experiments per demostrar les equacions
-teòriques de Maxwell existien a la realitat.</p>  
-\text{Si volem detectar un mòbil que emeti a 1800 MHz, quin diàmetre és necesari per contruir un anell de Hertz?. Serà la meitat de la longitud d'ona. Subtituïm valors per tal de calcular el diàmetre aïllant la longitud d'ona.}
-$$D=2\lambda 
-$$D= diàmetre
-$$\lambda = \text{longitud d'ona}
-$$\lambda=\frac{c}{f}=\frac{3·10^{8}\text{m/s}}{1800·10^{6}\text{cicles/s}}= 0,1666 \text{m}= 16,666 \text{cm}
-<p> L'anell de Hertz tindrà meitat de la longitud d'ona, en aquest cas, la longitud d'ona de 8,33 cm.</p>
-<h1> Com construir l'anell de Hertz? </h1>
-<p>Agafem un cable d'electrònica rigid (AWG 22 (el més comú)): té un diàmetre de 0,64 mm i el pelem i un cop pelat el deixem un espai de 5mm obert.
-Es comporta com un condesador i una  bobina perquè pot circular.</p>
-\\
-f=\frac{1}{2\pi\sqrt{LC}}
-\\
-f=\text{freqüència (Hz)}
-\\
-L=\text{inductància (H)}
-\\
-C=\text{capacitat (F)}
 
-<p>La fórmula anterior es coneix com a fórmula de freqüència de resonància i és perquè ens diu la relació que hi ha entre la freqüència que volem detectar,
-per exemple, 1800 MHz amb dos paràmetres d'elements electrònics del circuit. Realment al temps de Hertz no existien condensadors i bobines 
-i utilizaven l'ampolla de Leiden com a condensador. Actualment tenim condensadors i bobines electrònics que formen part tant pels mòbils per produïr la freqüència 
-de resonància que prodrueixen una ona portadora i aquesta ona a sobre porta unes altres ones que son les de audio i video. L'anell de Hertz 
-funciona igualk només . </p>
-    <p> La fórmula d'un condensador és:</p>
-
-
-    <p></p>
-    <h1> Elements electrònic per detectar un mòbil</h1>
+    <body>
+    <h1>Elements electrònics per detectar un mòbil</h1>
     <ol>
-      <li>MICROCONTROLADOR (CERVELL): Necesitem un component que processi i decideixi que fer: encendre un LED, mesurar la intensitat
-      del LED proporcional a la distància del mòbil encès. També es pot fer un brunzidor. També es pot fer pantalles OLED o pantalles LCD
-      en una caixa impresa en 3D.</li>
-      <li>ANTENA DE HERTZ:Al 1886 Hertz va utilitzar una ampolla de Leiden per generar un camp magnètic, en el nostre cas l'ampolla serà el mòbil que té un camp magnètic molt més petit. </li>
-      <img src="ARO DE HERTZ">
+      <li>MICROCONTROLADOR(CERVELL):Necessitem un component que processi i decideixi que fer: encendre el LED, +
+        mesurar la intensitat d'un LED proporcional a la distància del mòbil encès. També es pot fer un brunzidor, pantalles
+        OLED o pantalles LCD en una caixa impresa en 3D.
+        </li>
+     <li>ANTENA DE CABLE O ANELL DE HERTZ:Al 1886 Hertz va utilitzar una ampolla de Leiden per generar un camp magnètic,
+     en el nostre cas l'ampolla serà el mòbil que té un camp magnètic molt més petit. El diàmetre de l'anell de Hertz depèn de
+     la freqüència que volem detectar.(Buscar fòrmula que relaciona el diàmetre de l'anell de Hertz amb 1800 MHz que emet el telèfon mòbil).</li>
+      <img src="ARO DE HERTZ.jpg">
+  <li>COMPONENTS AMPLIFICADORS: Pot ser amplificador operacional o diodes amplificadors    </li>
+  <img src="AMPLIFICADOR OPERACIONAL.jpg
+ 
     </ol>
-  </body>
-  
+     
+    </body>
 </html>
